@@ -38,4 +38,10 @@ public class PlayerController : MonoBehaviour {
 			victoryText.text = "A winner is you!";
 		}
 	}
+
+	void Update() {
+		if (Input.GetKey ("escape")) {
+			Application.Quit ();
+		}
+	}
 }
